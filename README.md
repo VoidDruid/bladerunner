@@ -1,2 +1,2 @@
 # bladerunner
-Small python app to simplify rinning and managing scipts. Initially developed it for personal VPS maintenance.
+Small python app to simplify running and managing scipts. Initially developed it for personal VPS maintenance.
