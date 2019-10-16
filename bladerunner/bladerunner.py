@@ -65,10 +65,11 @@ if __name__ == '__main__':
     print('Welcome to script runner!')
     print()
     if len(sys.argv) == 1:
-        base_dir = os.getcwd()
+        base_dir = os.getenv('BLADERUNNER_ROOT', os.getcwd())
     elif len(sys.argv) == 2:
         base_dir = os.path.abspath(sys.argv[1])
     else:
         print("You can provide 1 argument - base work directory, or non to use current working directory")
         exit(1)
+    print(f'Base directory: {base_dir}')
     main(base_dir)
