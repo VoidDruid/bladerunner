@@ -61,7 +61,7 @@ def main(base_dir):
     run_script(script)
 
 
-if __name__ == '__main__':
+def run():
     print('Welcome to script runner!')
     print()
     if len(sys.argv) == 1:
@@ -73,3 +73,8 @@ if __name__ == '__main__':
         exit(1)
     print(f'Base directory: {base_dir}')
     main(base_dir)
+
+
+if __name__ == '__main__':
+    run()
+
